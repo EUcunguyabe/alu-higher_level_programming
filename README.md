@@ -1,1 +1,1 @@
-this cotains all solutions of  python
+this cotains all solutions of  pyhton more classes
