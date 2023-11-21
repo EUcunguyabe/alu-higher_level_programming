@@ -1,1 +1,1 @@
-this contain all solutions of python everythin is all object
+ this contain all solutions of python everything is object
