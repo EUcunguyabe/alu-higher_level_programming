@@ -1,12 +1,12 @@
 #!/usr/bin/python3
-"""A script that sends a requests and displays the body of response."""
-
+"""Documented now"""
+import requests
+import sys
 
 if __name__ == '__main__':
-    import requests
-    import sys
-    request = requests.get(sys.argv[1])
-    if request.status_code < 400:
-        print(request.text)
-    elif request.status_code >= 400:
-        print("Error code: {}".format(request.status_code))
+    url = sys.argv[1]
+    response = requests.get(url)
+    if response.status_code >= 400:
+        print("Error code: {}".format(response.status_code))
+    else:
+        print("{}".format(response.text))
