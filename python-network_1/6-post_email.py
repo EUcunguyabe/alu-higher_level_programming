@@ -1,10 +1,12 @@
 #!/usr/bin/python3
-"""Documented now"""
-import requests
+"""__summary__
+- Write a Python script that takes in a URL,
+- sends a request to the URL and displays the value of the
+- variable X-Request-Id in the response header
+"""
 import sys
+import requests
 
 if __name__ == '__main__':
-    url = sys.argv[1]
-    value = sys.argv[2]
-    response = requests.post(url, data={"email": value})
-    print("{}".format(response.text))
+    reqs = requests.get(sys.argv[1])
+    print(reqs.headers.get("X-Request-Id"))
