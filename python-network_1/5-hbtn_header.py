@@ -1,9 +1,13 @@
 #!/usr/bin/python3
-"""Documented now"""
+"""__summary__
+- Write a Python script that
+- fetches https://intranet.hbtn.io/status.
+"""
 import requests
-import sys
 
-if __name__ == '__main__':
-    url = sys.argv[1]
-    response = requests.get(url)
-    print("{}".format(response.headers.get("X-Request-Id")))
+
+if __name__ == "__main__":
+    r = requests.get("https://intranet.hbtn.io/status")
+    print("Body response:")
+    print("\t- type: {}".format(type(r.text)))
+    print("\t- content: {}".format(r.text))
