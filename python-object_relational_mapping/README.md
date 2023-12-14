@@ -1,2 +1,2 @@
-Python - Object-relational mapping
-Author: UMUTONI Kevine (simplykevine)
+this contain all solutions about Python - Object-relational mapping
+code edited by Emmelance Ucunguyabe
